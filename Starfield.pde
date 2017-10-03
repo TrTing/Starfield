@@ -8,6 +8,7 @@ void setup()
     particles[i] = new NormalParticle();
   }
   particles[0] = new OddballParticle();
+  particles[1]= new JumboParticle();
 }
 void draw()
 {
@@ -63,7 +64,11 @@ class OddballParticle implements Particle
     myB= myB+5;
   }
 }
-class JumboParticle //uses inheritance
+class JumboParticle extends NormalParticle
 {
-  //your code here
+  public void show()
+  {
+    fill (255, 0, 0);
+    ellipse ((float)myX, (float)myY, 30, 30);
+  }
 }
