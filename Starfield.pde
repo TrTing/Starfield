@@ -12,7 +12,7 @@ void setup()
 }
 void draw()
 {
-  background(0);
+  background((int)(random(255));
   for (int i = 0; i < particles.length; i++)
   {
     particles [i].move();
