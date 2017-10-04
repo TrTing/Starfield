@@ -12,8 +12,7 @@ void setup()
 }
 void draw()
 {
-  int colr = ((int)(Math.random()*255));
-  background(colr);
+  background(0);
   for (int i = 0; i < particles.length; i++)
   {
     particles [i].move();
