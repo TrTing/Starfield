@@ -72,3 +72,7 @@ class JumboParticle extends NormalParticle
     ellipse ((float)myX, (float)myY, 30, 30);
   }
 }
+void mousePressed()
+{
+  redraw();
+}
